@@ -27,9 +27,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
+          
 # Snyk resolves the dependency tree from installed packages
-      - run: npm ci
+      - run: npm install
 
       - uses: snyk/actions/setup@master
 
